@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SalzAdminImporter-AirBnb
 // @namespace    http://salztraeume-am-see.de
-// @version      0.2
+// @version      0.3
 // @description  Import Bookings from AirBnb to Salzträum Admin Interface
 // @author       Anton Wilhelm
 // @include      https://www.airbnb.de/*
@@ -26,7 +26,7 @@
         openInNewTab(url);
     };
     var parseData = function() {
-        var container =  $(".qt-reservation-info");
+        var container = $(".qt-reservation-info");
         var flatName = container.find("div").eq(0).text();
         var code = container.find("div").eq(3).text();
         var flatLink = $(".qt-reservation-info").find("div a").eq(0).attr("href");
@@ -57,11 +57,12 @@
     };
 
     if ($(".qt-reservation-info").length > 0) {
-        var template = '<div style="position: absolute;top: 0;left: 0;width: 80px;z-index: 9999;">'+
-            '<button class="__salz-imoprt" style="padding: 5px;background: #FF5D62;">ADMIN IMPORT</button>'+
+        var code = $(".qt-reservation-info div").eq(3).text();
+        var template = '<div style="position: absolute;top: 0;left: 0;width: 69px;z-index: 9999;">'+
+            '<button class="__salz-imoprt" style="border: 0;background: #FF5D62;">ADMIN IMPORT</button></br>'+
+            '<a style="font-weight: bold;" target="_blank" href="/reservation/itinerary?code=' + code + '">Reiseplan</a>'+
             '</div>';
         $(document.body).append(template);
         $(document.body).on('click', '.__salz-imoprt', importToAdmin);
     }
-    
 })();

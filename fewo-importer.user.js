@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name         SalzAdminImporter-FeWo
 // @namespace    http://salztraeume-am-see.de
-// @version      0.1
-// @namespace    http://github.com/a2-team
+// @version      0.2
 // @description  Import Bookings from FeWo to Salzträum Admin Interface
 // @author       Anton Wilhelm
-// @include      https://www.fewo-direkt.de*
+// @include      https://www.fewo-direkt.de/*
 // @run-at       document-idle
 // @updateURL    https://raw.githubusercontent.com/a2-team/userscripts/master/fewo-importer.user.js
 // @downloadURL  https://raw.githubusercontent.com/a2-team/userscripts/master/fewo-importer.user.js

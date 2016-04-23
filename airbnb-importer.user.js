@@ -2,7 +2,6 @@
 // @name         SalzAdminImporter-AirBnb
 // @namespace    http://salztraeume-am-see.de
 // @version      0.2
-// @namespace    http://github.com/timaschew
 // @description  Import Bookings from AirBnb to Salzträum Admin Interface
 // @author       Anton Wilhelm
 // @include      https://www.airbnb.de/*

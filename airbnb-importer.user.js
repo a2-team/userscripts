@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SalzAdminImporter
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @namespace    http://github.com/timaschew
 // @description  Import Bookings from AirBnb to Salzträum Admin Interface
 // @author       Anton Wilhelm

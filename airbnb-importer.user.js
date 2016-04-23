@@ -7,13 +7,12 @@
 // @author       Anton Wilhelm
 // @include      https://www.airbnb.de/*
 // @run-at       document-idle
-// @updateURL     https://raw.githubusercontent.com/Mottie/GitHub-userscripts/master/github-toc.user.js
-// @downloadURL   https://raw.githubusercontent.com/Mottie/GitHub-userscripts/master/github-toc.user.js
+// @updateURL    https://raw.githubusercontent.com/a2-team/userscripts/master/airbnb-importer.user.js
+// @downloadURL  https://raw.githubusercontent.com/a2-team/userscripts/master/airbnb-importer.user.js
 // ==/UserScript==
 
 (function() {
     'use strict';
-    console.log('wooo');
     var BASE = 'http://thunderwave.de:9773/admin/import?';
     var openInNewTab = function (url) {
         window.open(url, '_blank');
